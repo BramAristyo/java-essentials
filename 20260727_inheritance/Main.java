@@ -36,6 +36,7 @@ class Dog extends Animal {
 	}
 
 	// Overide parent function
+	@Override
   public void eat() {
     System.out.println(name + ": " + getSound() +" .. so delicious");
   }
@@ -51,6 +52,8 @@ class Cat extends Animal {
   Cat(String name) {
     super(name, "Miauw");
   }
+
+  @Override
   public void makeSound() {
     // Access the "sound" variable must use GETTER
     // because it's come from private function
